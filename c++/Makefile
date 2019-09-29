@@ -1,16 +1,13 @@
-EXE = test.x
-GDIR=lib
+CXX=clang++
+CXXFLAGS= -Wall -Wextra -std=c++11 -Isrc -O3
 
-CXX= c++
-CXXFLAGS= -Wall -Wextra -std=c++11 -I src #-03
-LFLAGS= -lbst -L $(GDIR)
+SRC=test.cpp
+EXE=$(SRC:.cpp=.x)
 
 all: $(EXE)
-%.o: %.cpp
-	$(CXX) -c $< -o $@ $(CXXFLAGS)
 
-$(EXE): test.o
-	$(CXX) $^ -o $(EXE) $(LFLAGS)
+%x:%cpp
+	$(CXX) $< -o $@ $(CXXFLAGS)
 
 clean:
 	rm -rf $(EXE) *~

@@ -1,5 +1,5 @@
-#include "bst.h"
-#include "bst.cpp"
+#include "bst_full.h"
+//#include "bst.cpp"
 #include <vector>
 #include <random>
 #include <algorithm>
