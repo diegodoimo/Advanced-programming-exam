@@ -1,5 +1,4 @@
 #include "bst_full.h"
-//#include "bst.cpp"
 #include <vector>
 #include <random>
 #include <algorithm>
@@ -114,19 +113,3 @@ int main() {
     }
 }
 
-
-
-
-//    map.insert(std::make_pair(1, 3.0));
-//    map.insert(std::make_pair(2, 5.0));
-//    //map.insert(std::make_pair(0, 2));
-//    //map.insert(std::make_pair(3, 4));
-//    std::cout<<map<<'\n';
-//    Map<int ,double> map1 = map;
-//    std::cout<<map1<<'\n';
-//    Map<int, double>::Iterator it{map1.find(2)};
-//    if (it==nullptr){
-//       std::cout<<0<<'\n';}
-//       else{std::cout<<(*it).second<<'\n';}
-//    //map.balance();
-//    //std::cout<<map;
