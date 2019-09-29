@@ -1,0 +1,1 @@
+Keep in the same folder test.cpp, src with the 'bst_full.h' in it and the Makefile. To compile the code type make. 
