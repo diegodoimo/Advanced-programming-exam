@@ -82,7 +82,7 @@ int main() {
     std::vector<int> keys{};
     std::map<int, double> stmap;
     
-    for(int size=100; size<1000000; size*=5){
+    for(int size=100; size<1000; size*=5){
         
         std::vector<double> vel_tmp;
         for(int rep = 0; rep<10; rep++){
